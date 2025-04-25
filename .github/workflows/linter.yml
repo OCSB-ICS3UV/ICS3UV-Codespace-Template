@@ -11,6 +11,7 @@ jobs:
   run-linters:
     name: GitHub Super Linter
     runs-on: ubuntu-latest
+    permissions: read-all
 
     steps:
       - name: Check out Git repository 🚦
