@@ -1,0 +1,49 @@
+{
+    "name": "Mr Coxall - Codespace Image",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.autoClosingQuotes": "always",
+                "editor.bracketPairColorization.enabled": true,
+                "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+                "editor.folding": false,
+                "editor.formatOnPaste": true,
+                "editor.guides.bracketPairs": true,
+                "editor.guides.indentation": true,
+                "editor.inlineSuggest.enabled": true,
+                "editor.insertSpaces": true,
+                "editor.lightbulb.enabled": false,
+                "editor.lineNumbers": "on",
+                "editor.minimap.enabled": false,
+                "editor.mouseWheelZoom": true,
+                "editor.renderWhitespace": "all",
+                "editor.smoothScrolling": true,
+                "editor.tabSize": 2,
+                "explorer.confirmDragAndDrop": false,
+                "extensions.ignoreRecommendations": true,
+                "files.eol": "\n",
+                "git.autofetch": true,
+                "git.confirmSync": false,
+                "git.enableSmartCommit": true,
+                "githubPullRequests.defaultMergeMethod": "merge",
+                "terminal.integrated.copyOnSelection": true,
+                "terminal.integrated.mouseWheelZoom": true,
+                "terminal.integrated.fontSize": 20,
+                "terminal.integrated.rightClickBehavior": "copyPaste",
+                "terminal.integrated.gpuAcceleration": "off",
+                "window.menuBarVisibility": "classic",
+                "workbench.activityBar.visible": true,
+                "workbench.colorTheme": "GitHub Dark Default",
+                "workbench.iconTheme": "material-icon-theme",
+                "workbench.startupEditor": "none",
+                "workbench.tips.enabled": false,
+                "workbench.welcomePage.walkthroughs.openOnInstall": false
+            }
+        }
+    }
+}
