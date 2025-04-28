@@ -1,5 +1,6 @@
 C 
+F# 
 Go 
 Rust 
-Perl 
+Swift 
 TypeScript (Deno)
