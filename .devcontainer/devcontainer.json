@@ -11,16 +11,26 @@
 				"medo64.render-crlf"
 			],
 			"settings": {
+				"breadcrumbs.enabled": false,
+				"breadcrumbs.filePath": "off",
+				"breadcrumbs.icons": false,
+				"chat.agent.enabled": false,
+				"chat.commandCenter.enabled": false,
+				"chat.extensionTools.enabled": false,
+				"chat.tools.autoApprove": false,
 				"code-eol.crlfCharacter": "↵",
 				"code-eol.newlineCharacter": "↵",
 				"code-eol.returnCharacter": "↵",
+				"deno.lint": true,
 				"editor.autoClosingQuotes": "always",
 				"editor.bracketPairColorization.enabled": true,
 				"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 				"editor.folding": false,
+				"editor.fontSize": 18,
 				"editor.formatOnPaste": true,
 				"editor.guides.bracketPairs": true,
 				"editor.guides.indentation": true,
+				"editor.indentSize": "tabSize",
 				"editor.inlineSuggest.enabled": true,
 				"editor.insertSpaces": true,
 				"editor.lightbulb.enabled": "off",
@@ -40,6 +50,11 @@
 				"git.autofetch": true,
 				"git.confirmSync": false,
 				"git.enableSmartCommit": true,
+				"github.codespaces.defaultExtensions": [
+					"justjavac.vscode-deno-extensionpack",
+					"golang.go",
+					"medo64.render-crlf"
+				],
 				"github.copilot.advanced": {
 					"enableChat": false,
 					"enableCodeSnippets": false,
@@ -49,12 +64,6 @@
 					"enableQuickSuggestions": false
 				},
 				"githubPullRequests.defaultMergeMethod": "merge",
-				"go.lintTool": "golangci-lint-v2",
-				"go.lintFlags": [
-					"--path-mode=abs",
-					"--fast-only"
-				],
-				"go.formatTool": "custom",
 				"go.alternateTools": {
 					"customFormatter": "golangci-lint-v2"
 				},
@@ -62,11 +71,20 @@
 					"fmt",
 					"--stdin"
 				],
+				"go.formatTool": "custom",
+				"go.lintFlags": [
+					"--path-mode=abs",
+					"--fast-only"
+				],
+				"go.lintTool": "golangci-lint-v2",
 				"terminal.integrated.copyOnSelection": true,
 				"terminal.integrated.fontSize": 20,
 				"terminal.integrated.gpuAcceleration": "off",
 				"terminal.integrated.mouseWheelZoom": true,
 				"terminal.integrated.rightClickBehavior": "copyPaste",
+				"terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+				"typescript.format.enable": true,
+				"typescript.suggest.enabled": true,
 				"window.menuBarVisibility": "classic",
 				"workbench.activityBar.visible": true,
 				"workbench.colorTheme": "GitHub Dark Default",
