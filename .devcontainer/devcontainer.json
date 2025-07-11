@@ -29,8 +29,7 @@
 				"editor.mouseWheelZoom": true,
 				"editor.renderWhitespace": "all",
 				"editor.rulers": [
-					80,
-					120
+					80
 				],
 				"editor.smoothScrolling": true,
 				"editor.stickyScroll.enabled": false,
