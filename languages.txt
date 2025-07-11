@@ -1,6 +1,0 @@
-C 
-C# 
-Go 
-Ruby 
-Rust 
-TypeScript (Deno)

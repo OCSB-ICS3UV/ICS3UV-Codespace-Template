@@ -1,32 +1,38 @@
-##################################################
-# Run GitHub Super Linter against code base #
-##################################################
-
 ---
 name: GitHub Super Linter
 
-on: [push, pull_request]
+on: # yamllint disable-line rule:truthy
+  push: null
+  pull_request: null
+
+permissions: {}
 
 jobs:
-  run-linters:
+  build:
     name: GitHub Super Linter
     runs-on: ubuntu-latest
-    permissions: read-all
+
+    permissions:
+      contents: read
+      packages: read
+      # To report GitHub Actions status checks
+      statuses: write
 
     steps:
       - name: Check out Git repository 🚦
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
+        with:
+          # super-linter needs the full git history to get the
+          # list of files that changed across commits
+          fetch-depth: 0
 
       - name: Run GitHub Super Linter 🚀
-        uses: super-linter/super-linter@v7.3.0
+        uses: super-linter/super-linter@v7.4.0 # x-release-please-version
         env:
           VALIDATE_ALL_CODEBASE: true
-          LINTER_RULES_PATH: /
-          VALIDATE_CPP: true
-          VALIDATE_CSHARP: true
-          VALIDATE_GO: true
-          VALIDATE_RUBY: true
-          VALIDATE_RUST_2021: true
-          VALIDATE_TYPESCRIPT_STANDARD: true
           DEFAULT_BRANCH: main
+          # just lint typescript and go files
+          VALIDATE_GO: true
+          VALIDATE_TYPESCRIPT_ES: true
+          # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
