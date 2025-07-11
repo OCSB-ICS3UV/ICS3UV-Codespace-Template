@@ -38,5 +38,5 @@
   ```
 - to lint your program
   ```console
-  golangci-lint run
+  golangci-lint run ./*.go
   ```
