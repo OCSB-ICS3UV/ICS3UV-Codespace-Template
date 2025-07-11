@@ -1,7 +1,7 @@
 
 # ICS3UV
 
-## Typescript with Deno
+## Typescript, with Deno
 
 - to compile your program
   ```console
