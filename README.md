@@ -1,8 +1,9 @@
-
 # ICS3UV
 
 ## GitHub
-- ensure you commit your code after every major change, to keep your history and not loose anything
+
+- ensure you commit your code after every major change, to keep your history and
+  not loose anything
   ```console
   git add -A
   git commit -m "𝑐𝑜𝑚𝑚𝑖𝑡 𝑚𝑒𝑠𝑠𝑎𝑔𝑒"
@@ -18,7 +19,7 @@
 
 - to format your program
   ```console
-  deno fmt ./*.ts
+  deno fmt --check ./*.ts
   ```
 - to lint your program
   ```console
@@ -33,7 +34,7 @@
   ```
 - to format your program
   ```console
-  go fmt ./*.go
+  gofmt -d ./*.go
   ```
 - to lint your program
   ```console
